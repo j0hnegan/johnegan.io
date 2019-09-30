@@ -4,6 +4,7 @@
 @import 'site/vars';
 @import 'site/mixins';
 
+
 @import 'elements/typography';
 @import 'elements/images';
 @import 'elements/buttons';
@@ -15,6 +16,9 @@
 @import 'components/footer';
 
 @import 'templates/index';
+@import 'templates/projects';
+
+@import 'site/animation';
 
 
 
@@ -48,6 +52,21 @@ body {
     display: grid;
     max-width: 1120px;
     width: 100%;
+     }
+}
+
+.container-text {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    @include desktop {
+    display: grid;
+    max-width: 680px;
+    width: 100%;
+     }
+     p {
+       font-size: 21px;
      }
 }
 
