@@ -1,0 +1,109 @@
+.projects {
+
+section {
+  padding: 60px 0;
+}
+
+#hero {
+    @include desktop {
+  align-items: center;
+  display: grid;
+}
+
+  .container {
+    align-items: center;
+  }
+
+  .img-container {
+
+    @include desktop {
+      min-height: 400px;
+    }
+
+    }
+
+
+}
+  .hero-text {
+
+    @include desktop {
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row: 1;
+    z-index: 2;
+  }
+
+    h1 {
+      margin: 0;
+      padding: 0 0 20px 0;
+      font-size: 72px;
+    }
+
+    p {
+      margin: 0;
+      padding:20px 0 40px 0;
+      // width: 85%;
+    }
+  }
+
+  .img-container {
+    border-radius: 4px;
+    padding: 0 16px;
+    @include desktop {
+      max-width: 1120px;
+      margin: 32px auto;
+
+    }
+
+    video {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+ }
+  img {
+    width: 100%;
+
+  }
+
+  .chat {
+    padding: 40px 0;
+
+
+
+    img {
+      max-width: 62px;
+      float: left;
+    }
+
+    p {
+      float: left;
+      margin-left: 24px;
+
+    }
+  }
+
+  @include mobile {
+  #work {
+    padding-bottom: 0;
+  }
+}
+
+p {
+  font-size: 21px;
+}
+
+ul {
+  li {
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 1.7;
+    margin-bottom: 16px;
+  }
+}
+
+h2 {
+  margin: 0;
+}
+
+}

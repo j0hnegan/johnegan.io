@@ -19,8 +19,8 @@ cursor: pointer;
   &:hover {
     background: $blue-light;
     border: 1px solid $blue-light;
-    -webkit-transition: background .15s; /* Safari prior 6.1 */
-  transition: background .15s;
+    -webkit-transition: background .25s; /* Safari prior 6.1 */
+  transition: background .25s;
   }
 }
 
@@ -33,4 +33,20 @@ a {
   &:hover {
     text-decoration: underline;
   }
+}
+
+
+/* shorter version! */
+a[href*="//"]:not([href*="mysite.com"]) {
+  &:after {
+    background-image: url(../img/external-link.svg);
+    background-size: 10px 20px;
+    display: inline-block;
+    width: 10px;
+    height: 20px;
+    content: "";
+    margin-left: 4px;
+
+  }
+
 }

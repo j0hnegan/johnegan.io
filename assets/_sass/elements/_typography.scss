@@ -13,16 +13,18 @@ text-shadow: #fff 0px 1px 1px;
 
 }
 
+
+
 button {
   font-family: 'Rubik', sans-serif;
   font-weight: 500;
   -webkit-font-smoothing: antialiased;
  -moz-osx-font-smoothing: grayscale;
- -webkit-text-stroke: 0.45px;
-// or
--webkit-text-stroke: 0.45px rgba(0, 0, 0, 0.1);
-// or
+}
 
+a {
+  text-shadow: none;
+  -webkit-text-stroke: 0;
 }
 
 h1, h2, h3, h4, h5 {
@@ -67,7 +69,7 @@ h3 {
 
 p {
   line-height: 1.5;
-  color: $black-light;
+  color: $black;
   font-size: 20px;
 }
 
@@ -79,7 +81,7 @@ p {
   color: $black;
 
   span {
-    color: #4e9ddf;
+  //  color: $blue;
     font-weight: 700;
   }
 }

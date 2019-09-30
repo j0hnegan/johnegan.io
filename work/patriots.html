@@ -1,0 +1,129 @@
+---
+layout: default
+class: projects
+---
+
+<body class="white {{ page.class }} ">
+	{% include nav.html %}
+	<section id="hero" class="">
+
+		<div class="container-text">
+			<div class="row">
+				<div class="hero-text">
+					<h1>New England Patriots</h1>
+
+
+				</div>
+			</div>
+		</div>
+		<div class="img-container">
+			<div class="reveal-holder">
+  <div class="reveal-block" data-aos="reveal-right"></div>
+
+			<video src="../assets/img/bg-vid.mp4" type="video/mp4" autoplay loop muted>
+
+	</video>
+</div>
+		</div>
+		<div class="container-text">
+
+					<p>As the first sports team to have a website in 1995, as well as the first NFL team to reach a million followers on Twitter, the New England Patriots have led the sports world in digital experiences for the past 3 decades.</p>
+
+					<p>I was fortunate to have worked with Patriots Digital Media to design experiences for <a href="https://patriots.com" target="_blank">Patriots.com</a>, <a href="https://twitter.com/Patriots" target="_blank">@Patriots</a>, the <a href="https://proshop.patriots.com/" target="_blank">Patriots Proshop</a>.</p>
+
+					<p>In addition, I created graphics for digital and print displays throughout Patriots Place, photographed and edited images and audio from press conferences and locker room interviews, as well as designed marketing emails which were delivered to hundreds
+						of thousands of inboxes on a weekly basis and received national press coverage.</p>
+					</p>
+
+		</div>
+	</section>
+	<section id="work">
+		<div class="container-text">
+			<h2>Digital Design</h2>
+		</div>
+			<div class="img-container">
+				<img src="" alt="">
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="quote">
+					<h4>"John has upleveled our web presence dramatically. He brings a fresh approach and pushed the brand to another level, while still very much keeping it true to itself. His work has truly moved the needle for process and revenue."</h4>
+					<div class="chat">
+						<img class="" src="../assets/img/62x62-lauren.png" srcset="../assets/img/62x62-lauren@2x.png" alt="">
+						<p><b>Lauren Bocci</b><br /> VP of Marketing, VictorOps</p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<section id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="contact">
+					<h2>Let's Work Together</h2>
+					<p>I'm currently at Techstars, leading the user and brand experience for web products. If you have a project in mind or you just want to chat, please email <a href="mailto:john@johnegan.io">john@johnegan.io</a> to get the ball rolling.</p>
+					<a href="mailto:john@johnegan.io"><button class="main-cta">john@johnegan.io</button></a>
+
+					<div class="chat-wrapper">
+
+
+						<div class="chat">
+							<img src="../assets/img/62x62-chat-icon.png" srcset="../assets/img/62x62-chat-icon@2x.png" alt="">
+							<p><b>Reply Time:</b> within 1-2 working days</p>
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<div class="footer">
+				<div class="social">
+					<img target="_blank" src="../assets/img/linkedin.svg" alt="">
+					<img target="_blank" src="../assets/img/github.svg" alt="">
+					<img target="_blank" src="../assets/img/angellist.svg" alt="">
+					<img target="_blank" src="../assets/img/instagram.svg" alt="">
+				</div>
+				<div class="small-talk">
+					<p>© 2019 Designed and Developed by <a href="mailto:john@johnegan.io">Me!</a></p>
+				</div>
+
+			</div>
+
+		</div>
+	</footer>
+
+
+	<script>
+		$(document).ready(function() {
+			// Add smooth scrolling on all links inside the navbar
+			$("#hero a").on('click', function(event) {
+				// Make sure this.hash has a value before overriding default behavior
+				if (this.hash !== "") {
+					// Prevent default anchor click behavior
+					event.preventDefault();
+
+					// Store hash
+					var hash = this.hash;
+
+					// Using jQuery's animate() method to add smooth page scroll
+					// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+					$('html, body').animate({
+						scrollTop: $(hash).offset().top
+					}, 600, function() {
+
+						// Add hash (#) to URL when done scrolling (default click behavior)
+						window.location.hash = hash;
+					});
+				} // End if
+			});
+		});
+	</script>
