@@ -18,9 +18,15 @@ footer {
   }
   }
 
-  p {
+  .small-talk {
+    p {
     font-size: 18px;
     font-weight: 500;
     color: $blue;
   }
+}
+
+a[href*="//"]:not([href*="mysite.com"]):after {
+  display: none;
+}
 }
