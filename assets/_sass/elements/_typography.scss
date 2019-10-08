@@ -1,7 +1,6 @@
 // Typography
 
-body, form, input, p {
-  font-family: 'Rubik', sans-serif;
+body, form, input, progress {
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
  -moz-osx-font-smoothing: grayscale;
@@ -12,6 +11,7 @@ body, form, input, p {
 text-shadow: #fff 0px 1px 1px;
 
 }
+
 
 
 
@@ -45,7 +45,7 @@ text-shadow: #fff 0px 1px 1px;
 h1 {
   font-size: 38px;
       @include desktop {
-  font-size: 90px;
+  font-size: 72px;
 }
 margin: 0 0 40px 0;
 line-height: 1.2;
@@ -68,15 +68,16 @@ h3 {
 }
 
 p {
-  line-height: 1.5;
+  line-height: 1.58;
   color: $black;
   font-size: 20px;
+
 }
 
 .lead {
   font-size: 18px;
       @include desktop {
-  font-size: 28px;
+  font-size: 20px;
 }
   color: $black;
 
