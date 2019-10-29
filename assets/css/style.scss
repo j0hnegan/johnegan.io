@@ -1,15 +1,18 @@
 ---
 ---
 
+@import 'site/reset';
 @import 'site/vars';
 @import 'site/mixins';
-
+@import 'site/grid';
+@import 'site/animation';
 
 @import 'elements/typography';
 @import 'elements/images';
 @import 'elements/buttons';
 
 @import 'components/card';
+@import 'components/chat';
 @import 'components/quote';
 @import 'components/contact';
 @import 'components/nav';
@@ -17,107 +20,3 @@
 
 @import 'templates/index';
 @import 'templates/projects';
-
-@import 'site/animation';
-
-
-
-/* Variables */
-
-
-
-/* Mixins */
-
-
-
-
-/* Grid */
-
-html {
-  overflow-x: hidden;
-}
-
-body {
-  max-width: 1440px;
-  overflow-x: hidden;
-  margin: 0 auto;
-}
-
-.container {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 16px;
-    padding-right: 16px;
-    @include desktop {
-    display: grid;
-    max-width: 1120px;
-    width: 100%;
-     }
-}
-
-.container-text {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 16px;
-    padding-right: 16px;
-    @include desktop {
-    display: grid;
-    max-width: 680px;
-    width: 100%;
-     }
-
-}
-
-.container-fluid {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 16px;
-    padding-right: 16px;
-
-    @include desktop {
-    max-width: 1440px;
-    width: 100%;
-     }
-}
-
-.row {
-    @include desktop {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-gap: 30px;
-  }
-}
-
-@each $name in '1' '2' '3' '4' '5' '6' '7'
-'8' '9' '10' '11' '12'{
-    .col-#{$name} {
-        @media (min-width: 960px) {
-       grid-column: span #{$name};
-      }
-    }
-}
-
-/* Typography */
-
-body {
-  font-family: 'Rubik', sans-serif;
-}
-
-h1, h2, h3, h4, h5, a, .lead {
-  font-family: 'Rubik', sans-serif;
-}
-
-
-/* ELEMENTS START HERE */
-
-/* Buttons */
-
-/* Navigation */
-
-/* ELEMENTS END HERE */
-
-/* COMPONENTS START HERE */
-
-/* COMPONENTS END HERE */
-
-/* PAGE OVERRIDES */

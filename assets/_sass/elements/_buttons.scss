@@ -1,29 +1,22 @@
 // Buttons and Links
 
 button {
-  background: $blue;
-  border: 1px solid $blue;
-  border-radius: 4px;
+  @include btn;
+  @include bradyus;
   padding: 16px 32px;
   font-size: 20px;
-  color: $white;
   font-weight: 500;
-  -webkit-transition: background .5s; /* Safari prior 6.1 */
-transition: background .5s;
-cursor: pointer;
+  color: $white;
+  @include shad;
+  margin: 40px 0;
+  transition: all 1s cubic-bezier(0.2, 0.8, 0.2, 1);
 
-  &:focus {
-    outline: none;
-  }
 
   &:hover {
-    background: $blue-light;
-    border: 1px solid $blue-light;
-    -webkit-transition: background .25s; /* Safari prior 6.1 */
-  transition: background .25s;
+    transition: all 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+    @include btn(lighten($blue, 5%));
   }
 }
-
 
 a {
   font-weight: 500;
@@ -32,11 +25,10 @@ a {
 
   &:hover {
     text-decoration: underline;
+
   }
 }
 
-
-/* shorter version! */
 a[href*="//"]:not([href*="mysite.com"]) {
   &:after {
     background-image: url(../img/external-link.svg);
@@ -46,7 +38,5 @@ a[href*="//"]:not([href*="mysite.com"]) {
     height: 20px;
     content: "";
     margin-left: 4px;
-
   }
-
 }
