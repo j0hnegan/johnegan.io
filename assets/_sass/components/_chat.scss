@@ -1,0 +1,15 @@
+// Chat
+
+.chat {
+  img {
+    grid-row: 1;
+    max-width: 62px;
+    float: left;
+  }
+
+  p {
+    grid-row: 1;
+    margin-left: 24px;
+    float: left;
+  }
+}

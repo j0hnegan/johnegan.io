@@ -1,128 +1,15 @@
 .projects {
 
-section {
-  padding: 60px 0;
+h1 {
+  line-height: 1.3;
 }
 
-#hero {
-    @include desktop {
-  align-items: center;
-  display: grid;
-  padding-bottom: 0;
-}
-
-  .container {
-    align-items: center;
-  }
-
-  .img-container {
-
-    @include desktop {
-      min-height: 400px;
-      max-width: 1120px;
-    }
-
-    @include mobile {
-      video {
-        display: none;
-      }
-    }
-    }
-
-
-}
-  .hero-text {
-
-    @include desktop {
-    grid-column-start: 1;
-    grid-column-end: 13;
-    grid-row: 1;
-    z-index: 2;
-  }
-
-    h1 {
-      margin: 0;
-      padding: 0;
-      font-size: 72px;
-    }
-
-    p {
-      margin: 0;
-      padding:20px 0 40px 0;
-      // width: 85%;
-    }
-  }
-
-  .img-container {
-    border-radius: 4px;
-    padding: 0 16px;
-    @include desktop {
-      max-width: 960px;
-      margin: 54px auto;
-
-    }
-
-
-
-    video {
-      width: 100%;
-      border-radius: 8px;
-    }
-
- }
-
-
-  img {
-    width: 100%;
-
-  }
-
-  .chat {
-    padding: 40px 0;
-
-
-
-    img {
-      max-width: 62px;
-      float: left;
-    }
-
-    p {
-      float: left;
-      margin-left: 24px;
-
-    }
-  }
-
-  @include mobile {
-  #work {
-    padding-bottom: 0;
-  }
-}
-
-p {
-  font-size: 20px;
-  line-height: 1.58;
-  margin:0;
-  margin-bottom: 40px;
-}
-
-ul {
+.container-text {
   li {
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.7;
-    margin-bottom: 16px;
+    list-style: disc;
+    margin: 24px 0 24px 24px;
+    font-size: 22.5px;
   }
-}
-
-h2 {
-  margin: 0;
-}
-
-h3 {
-  margin:0;
-  padding: 0 0 16px 0;
 }
 
 }

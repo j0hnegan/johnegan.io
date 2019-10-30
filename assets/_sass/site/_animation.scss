@@ -22,3 +22,13 @@
 [data-aos="reveal-right"].aos-animate {
   transform: scaleX(0);
 }
+
+.up {
+  -webkit-transform: translateY(0px);/* Safari prior 9.0 */
+  transform: translateY(0px); /* Standard syntax */
+
+  &:hover {
+    -webkit-transform: translateY(-4px);/* Safari prior 9.0 */
+    transform: translateY(-4px); /* Standard syntax */
+  }
+}
