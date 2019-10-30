@@ -1,32 +1,29 @@
 // footer
 
 footer {
-.footer {
-  @include desktop {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-}
-  img {
-    max-width: 32px;
-    max-height: 24px;
-    margin: 0px 4px;
+  .footer {
     @include desktop {
-    margin: 40px 4px;
-  }
-  }
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
 
-  .small-talk {
+    img {
+      max-width: 32px;
+      max-height: 24px;
+      margin: 0px 4px;
+
+      @include desktop {
+        margin: 40px 4px;
+      }
+    }
+
     p {
-    font-size: 18px;
-    font-weight: 500;
-    color: $blue;
+      font-weight: 500;
+    }
   }
-}
 
-a[href*="//"]:not([href*="mysite.com"]):after {
-  display: none;
-}
+  a[href*="//"]:not([href*="mysite.com"]):after {
+    display: none;
+  }
 }

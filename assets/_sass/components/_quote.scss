@@ -1,25 +1,13 @@
 // Quote
 
 .quote {
-  grid-column-start: 3;
+    @include desktop {
+    grid-column-start: 3;
     grid-column-end: 11;
-
-
-    h4 {
-      font-size: 22px;
-        @include desktop {
-      font-size: 24px;
-    }
-      line-height: 1.5;
-      font-weight: 400;
-      margin: 0 auto;
     }
 
-    p {
-      margin-top: 8px;
-
-        @include mobile {
-          font-size: 16px;
-        }
+    .lead {
+      padding-bottom: 40px;
     }
+
 }
