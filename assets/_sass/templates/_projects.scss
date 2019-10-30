@@ -22,7 +22,11 @@ section {
       max-width: 1120px;
     }
 
-
+    @include mobile {
+      video {
+        display: none;
+      }
+    }
     }
 
 
