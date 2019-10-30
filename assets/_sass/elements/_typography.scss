@@ -1,117 +1,88 @@
 // Typography
 
-body, button {
-  font-size: 10px;
-  font-family: 'Rubik', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color:$black;
-}
-
-h1, h2, h3, h4, h5 {
-
-  -webkit-text-stroke: 0.45px;
-  -webkit-text-stroke: 0.45px rgba(0, 0, 0, 0.1);
-  text-shadow: #fff 0px 1px 1px;
-
-  font-weight: 700;
-}
-
-h1 {
-  font-size: 6.87em;
-  line-height: 1.4;
-  padding: 24px 0;
-  font-weight: 700;
-
-}
-
-.display-1 {
-  font-size: 8.58em;
-}
-
-.display-2 {
-  font-size: 8.58em;
-}
-
-h2 {
-  font-size: 5.49em;
-  line-height: 1.4;
-  margin-bottom: 32px;
-}
-
-h3 {
-  font-size: 2.81em;
-  line-height: 1.4;
-
-}
-
-h4 {
-  font-size: 3.52em;
-  line-height: 1.5;
-  font-weight: 700;
-}
-
-p, ul, li {
-  font-size: 1.8em;
-  line-height: 1.8;
+body, form, input, progress {
   font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
+ -webkit-text-stroke: 0.45px;
+// or
+-webkit-text-stroke: 0.45px rgba(0, 0, 0, 0.1);
+// or
+text-shadow: #fff 0px 1px 1px;
+
 }
 
-.lead {
-  font-size: 2.25em;
-}
 
-.small {
-font-size: 1.44em;
-}
 
-.title {
-color: $grey;
-}
 
+button {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
+}
 
 a {
   text-shadow: none;
   -webkit-text-stroke: 0;
 }
 
-@include desktop {
-  .text-center {
-    text-align: center;
+h1, h2, h3, h4, h5 {
+  font-family: 'Rubik', sans-serif;
+  color:$black;
+  font-weight: 700;
+  -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
+  -webkit-text-stroke: 0.45px;
+// or
+-webkit-text-stroke: 0.45px rgba(0, 0, 0, 0.1);
+// or
+text-shadow: #fff 0px 1px 1px;
+}
+
+
+
+h1 {
+  font-size: 38px;
+      @include desktop {
+  font-size: 72px;
+}
+margin: 0 0 40px 0;
+line-height: 1.2;
+}
+
+h2 {
+  font-size: 32px;
+  margin: 0;
+      @include desktop {
+  font-size: 48px;
+    margin: 0 0 64px 0;
+}
+
+
+}
+
+h3 {
+  font-size: 24px;
+  @include no-marge;
+}
+
+p {
+  line-height: 1.58;
+  color: $black;
+  font-size: 20px;
+
+}
+
+.lead {
+  font-size: 18px;
+      @include desktop {
+  font-size: 20px;
+}
+  color: $black;
+
+  span {
+  //  color: $blue;
+    font-weight: 700;
   }
-}
-
-ul {
-  li {
-    font-weight: 500;
-  }
-}
-
-strong {
-  font-weight: 500;
-}
-
-::selection {
-  background: lighten($blue, 5%);
-  color: $white; /* WebKit/Blink Browsers */
-
-  text-shadow: lighten($blue, 5%) 0px 1px 1px;
-}
-
-.container-text {
-
-  h2:not(:first-child) {
-    margin-top: 1em;
-  }
-  p {
-    margin-bottom: 2em;
-  }
-
-
-}
-
-figcaption {
-  color: lighten($black, 30%);
-  font-weight: 400;
-
 }

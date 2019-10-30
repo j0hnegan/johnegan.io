@@ -1,6 +1,12 @@
 // Images
 
-img, video {
+img {
   width: 100%;
+
+}
+
+.job-tile {
+  border-radius: 8px;
+  box-shadow: 0 5px 16px 0 rgba($black, .2);
 
 }

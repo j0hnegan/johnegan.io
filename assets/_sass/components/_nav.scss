@@ -1,9 +1,49 @@
 // Nav
 
-nav {
-  padding: 32px 0;
-  
+.container-fluid {
+  padding: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+header {
+  width: 100%;
+
+
+
+  .container {
+    width: 100%;
+  }
+
+  nav {
+    padding: 32px 0;
+    z-index: 9999;
+  }
+
+  img {
+    width: 120px;
+  }
+
   .logo {
-      max-width: 120px;
+    max-width: 120px;
+  }
+
+  }
+
+
+
+
+#sticky-nav {
+  z-index: 2;
+  position:fixed;
+  background: $white;
+  transition: top .45s;
+
+  .navbar {
+    height: 80px;
+  }
+
+  @media (max-width: 1275px) {
+    display: none;
   }
 }

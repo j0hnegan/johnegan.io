@@ -1,16 +1,25 @@
 $black: #2f2f2f;
+$black-light: #595959;
 $blue: saturate(#2C9EE6, 20%);
 $blue-light: #2C9EE6;
+$blue-aqua: #57CDF4;
 
-$white: #fff;
-$grey: #676767;
+$pink: #DB3069;
 
+$grey: #F8F9FA;
+$grey-darker: #E2E3E4;
+$white: hsla(0%, 0%, 100%, 1);
+$red: #C8102E;
 
-$padding:64px;
+$border: 1px solid $grey;
+
+$shadow: 1px 1px 4px 1px rgba( $black, .05 );
+
+$padding:80px;
 
 $mobile: 414px;
 
-$desktop: 1025px;
-$mobile: 1024px;
 
-$bradyus: 8px;
+
+$desktop:992px;
+$yuge:1920px;
