@@ -57,6 +57,6 @@ transition: $element;
 
   &:hover {
     -webkit-transform: translateY($up);/* Safari prior 9.0 */
-    transform: translateY(-4px); /* Standard syntax */
+    transform: translateY($up); /* Standard syntax */
   }
 }
