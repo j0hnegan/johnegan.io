@@ -51,7 +51,7 @@ transition: $element;
     }
 }
 
-@mixin up($up: 4px) {
+@mixin up($up: -4px) {
   -webkit-transform: translateY(0px);/* Safari prior 9.0 */
   transform: translateY(0px); /* Standard syntax */
 
