@@ -41,7 +41,7 @@ section {
 
     &-img {
       margin: 56px auto;
-      
+
     }
   }
 
@@ -65,4 +65,11 @@ section {
 
 .v-center {
   align-items: center;
+}
+
+
+.mob-no {
+  @include mobile {
+    display: none !important;
+  }
 }

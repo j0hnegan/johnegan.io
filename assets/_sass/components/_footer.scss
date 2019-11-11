@@ -18,7 +18,12 @@ footer {
       }
     }
 
-  
+    .small-talk {
+      p {
+      font-size: 16px;
+    }
+  }
+
   }
 
   a[href*="//"]:not([href*="mysite.com"]):after {
