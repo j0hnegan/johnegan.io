@@ -3,7 +3,7 @@
 .chat {
   img {
     grid-row: 1;
-    max-width: 62px;
+    max-width: 56px;
     float: left;
   }
 
@@ -11,5 +11,6 @@
     grid-row: 1;
     margin-left: 24px;
     float: left;
+    font-size: 16px;
   }
 }
